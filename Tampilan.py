@@ -47,7 +47,7 @@ while True:
     ==============================
 
     1. Avanza
-    2. Inova
+    2. Innova
     3. Kijang
 
        """)
@@ -57,4 +57,4 @@ while True:
         print("MAAF PILIHAN YANG ANDA PILIH TIDAK ADA!")
 
 
-# ini aja
+# ini aja kontol memwk
