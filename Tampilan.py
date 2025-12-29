@@ -56,5 +56,9 @@ while True:
     else:
         print("MAAF PILIHAN YANG ANDA PILIH TIDAK ADA!")
 
+<<<<<<< HEAD
 
 # ini aja kontol memwk
+=======
+#fungsi
+>>>>>>> 9093da68ded244ac5cac354affc0f91b554e575d
