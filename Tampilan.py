@@ -1,3 +1,11 @@
+
+print("""
+==============================
+        SELAMAT DATANG
+    DI RENTAL MOBIL BAROKAH
+==============================
+""")
+
 while True:
 
     print("""
@@ -28,7 +36,7 @@ while True:
         pilihan1 = input("PILIH MODEL MOBIL DIATAS:")
 
     elif p_user == 2:
-        print("""
+    print("""
     ==============================
       SILAHKAN PILIH MODEL MOBIL 
     ==============================
@@ -41,7 +49,7 @@ while True:
         pilihan2 = input("PILIH MODEL MOBIL DIATAS:")
 
     elif p_user == 3:
-        print("""
+    print("""
     ==============================
       SILAHKAN PILIH MODEL MOBIL 
     ==============================
