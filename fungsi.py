@@ -55,7 +55,7 @@ def main():
             break
             
         except (ValueError, IndexError):
-            print("Input tidak valid. Silakan pilih nomor yang tertera.")
+            print("Input tidak valid, pilih nomor yang tertera.")
 
 if __name__ == "__main__":
     main()
