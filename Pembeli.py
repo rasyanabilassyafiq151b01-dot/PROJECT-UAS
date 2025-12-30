@@ -11,6 +11,7 @@ def sewa_mobil(nama_mobil, hari):
             total_harga = daftarmobil[nama_mobil]["harga_sewa_per_hari"] * hari
             daftarmobil[nama_mobil]["status"] = "disewa"
             print(f"Anda telah menyewa {nama_mobil} selama {hari} hari. Total harga: Rp{total_harga}")
+            return total_harga
         else:
             print(f"Maaf, {nama_mobil} sedang tidak tersedia untuk disewa.")
     else:

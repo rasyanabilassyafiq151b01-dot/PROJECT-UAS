@@ -1,3 +1,5 @@
+from Pembeli import sewa_mobil
+
 def pembayaran():
     print("""
 
@@ -11,14 +13,19 @@ def pembayaran():
 
     bayar = input("PILIH METODE DIATAS:").lower()
 
-while True:
-    no_debit = input("Masukkan nomor debit 16 digit: ")
+    if bayar == "debit":
 
-    if len(no_debit) == 16:
-        print("Nomor debit diterima")
-        break
-    else:
-        print("Nomor debit tidak valid")
-        print("Harus 16 karakter")
-        print("Silakan ulangi")
-    
+        while True:
+            no_debit = input("Masukkan nomor debit 16 digit: ")
+
+            if len(no_debit) == 16:
+                print("Nomor debit diterima")
+                break
+            else:
+                print("Nomor debit tidak valid")
+                print("Harus 16 karakter")
+                print("Silakan ulangi")
+
+    elif bayar == "tunai":    
+        tunai = int(input("Masukan Nominal Pembayaran Sesuai dengan Struk Diatas"))
+        
