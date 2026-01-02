@@ -1,6 +1,6 @@
 from Pembeli import sewa_mobil
 
-def pembayaran():
+def pembayaran(sewa_mobil):
     print("""
 
 ===========================
@@ -29,11 +29,11 @@ def pembayaran():
     elif bayar == "tunai":    
         tunai = int(input("Masukan Nominal Pembayaran Sesuai dengan Struk Diatas"))
         
-        if uang < total:
+        if tunai < total:
                 print("Uang kurang")
                 print("Total:", total)
         else:
-                kembalian = uang - total
+                kembalian = tunai - total
                 print("Pembayaran berhasil")
                 print("Kembalian:", kembalian)
                 break
