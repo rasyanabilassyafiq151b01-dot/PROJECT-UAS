@@ -3,12 +3,13 @@ from pembayaran import pembayaran
 
 def tampil_mobil():
     print("\nDAFTAR MOBIL")
-    for kode in mobil:
-        status = "Tersedia" if mobil[kode]["tersedia"] else "Disewa"
-        print(kode, mobil[kode]["nama"], "Rp", mobil[kode]["harga"], status)
+    for kode, info in mobil.items():
+        status = "Tersedia" if info["tersedia"] else "Disewa"
+        print(kode, info["nama"], "Rp", info["harga"], status)
+
 
 def sewa_mobil():
-    kode = input("Masukkan kode mobil: ")
+    kode = input("Masukkan kode mobil: ").upper()
 
     if kode in mobil:
         if mobil[kode]["tersedia"] == False:

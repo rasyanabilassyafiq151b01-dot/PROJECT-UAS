@@ -7,9 +7,16 @@ def pembayaran(total):
 
     pilih = input("Pilih (1-4): ")
 
-    if pilih == "4":
-        print("Pembayaran dibatalkan")
-        return False
+    if pilih == "1":
+        cash = int(input("Masukan Jumlah Uang Anda:"))
+        kembalian = cash - total
+        if cash < total:
+            print("Maaf Uang Tidak Cukup")
+        elif cash > total:
+            print("Kembalian Dari Sewa Mobil Anda:", kembalian)
+        else:
+            print ("Pembayaran Selesai")
+        return True 
     else:
         print("Pembayaran Rp", total, "berhasil")
         return True
